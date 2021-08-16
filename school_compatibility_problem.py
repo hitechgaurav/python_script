@@ -24,8 +24,11 @@ if __name__ == '__main__':
     # compatibility_factor = [1,2]
     # compatibility_factor = [1, 2, 3]
     # compatibility_factor = [1, 2, 3, 4, 1]
-    # compatibility_factor = [1, 2, 3, 4, 1, 5, 6, 5, 7, 8, 8, 8]
+    compatibility_factor2 = [1, 2, 3, 4, 1, 5, 6, 5, 7, 8, 8, 8]
     compatibility_factor = [1, 2, 3, 8, 8, 1, 5, 6, 7, 8, 5]
     students = StudentGrouper(compatibility_factor)
     count = students.get_max_group_count()
+    print(count)
+    students2 = StudentGrouper(compatibility_factor2)
+    count = students2.get_max_group_count()
     print(count)
